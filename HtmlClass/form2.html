@@ -1,0 +1,78 @@
+<form method="get" enctype="application/x-www-form-urlencoded" action="#">
+    <p>
+      <label> Name
+        <input type="text" name="customer_name" required />
+      </label>
+      <input type="text" name="customer_name" id="link-with-me" required />
+    </p>
+    <br />
+    <label for="link-with-me">Link with me</label>
+    <p>
+      <label>Phone
+        <input type="tel" name="phone_number" />
+      </label>
+    </p>
+    <p>
+      <label>Email
+        <input type="email" name="email_address" />
+      </label>
+    </p>
+    <fieldset>
+        <legend>Which taxi do you require?</legend>
+        <p>
+          <label>
+            <input type="radio" name="taxi" required value="car" /> Car
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="taxi" required value="van" /> Van
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="taxi" required value="tuktuk" /> Tuk Tuk
+          </label>
+        </p>
+      </fieldset><br><br><br>
+
+      <fieldset>
+        <legend>Extras</legend>
+        <p>
+          <label>
+            <input type="checkbox" name="extras" value="baby" /> Baby Seat
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="extras" value="wheelchair" /> Wheelchair
+            Access
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="checkbox" name="extras" value="tip" /> Stock Tip
+          </label>
+        </p>
+      </fieldset><br><br><br><br>
+
+      <p>
+        <label>Dropoff Place
+          <input type="text" name="dropoff_place" required list="destinations" />
+        </label>
+        <datalist id="destinations">
+          <option value="Airport"></option>
+          <option value="Beach"></option>
+          <option value="Fred Flinstone's House"></option>
+        </datalist>
+      </p>
+      <p>
+        <label>Special Instructions
+          <textarea name="comments" maxlength="500"></textarea>
+        </label>
+      </p>
+      <p><button>Submit Booking</button></p>
+    </form>
+    
+    
+    
