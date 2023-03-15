@@ -1,0 +1,20 @@
+.blue { 
+    color: blue;
+}
+.bold {   
+   font-size: 20px;
+   font-weight: bold;
+ }
+ .olive {  
+     color:olive;
+    }
+ .yellow{
+    color: yellow;
+ }
+ .brown{
+    color: brown;
+ }
+
+ *{
+color: crimson;
+ }
